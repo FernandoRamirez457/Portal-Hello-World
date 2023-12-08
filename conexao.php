@@ -1,9 +1,9 @@
 <?php
     function conectar(){
-        $host = 'localhost';
-        $usuario = 'root';
-        $senha = '';
-        $bd = 'bdPortal';
+        $host = 'fdb1032.awardspace.net';
+        $usuario = '4050487_bdportal';
+        $senha = '2InfoNet123@';
+        $bd = '4050487_bdportal';
 
         // realizar a conexão 
         $conection = mysqli_connect($host, $usuario, $senha, $bd);
