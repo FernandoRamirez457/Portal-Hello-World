@@ -24,6 +24,6 @@ const requests = [
 Promise.all(requests)
     .then(() => {
         // Todas as requisições foram concluídas
-        window.location.href = '../Portal-Hello-World/portal.html';
+        window.location.href = './Portal-Hello-World/portal.html';
     })
     .catch(error => console.error('Erro ao processar requisições:', error));
