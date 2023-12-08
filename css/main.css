@@ -1,0 +1,14 @@
+@import url(./reset.css);
+@import url(./navbar.css);
+@import url(./rodape.css);
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+
+main{
+    max-width: 1500px;
+    height: auto;
+    margin: auto;
+}

@@ -1,0 +1,322 @@
+/* Reset de estilos para remover margens e preenchimentos padrão */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    color: #dee2e6; /* Cor do texto padrão */
+}
+
+/* Container principal da página */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: #1e1e1e; /* Fundo escuro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Cabeçalho da página */
+.header {
+    width: 100%;
+    height: 70px;
+    background: #343a40;
+}
+
+/* Seção de perfil do usuário */
+.profile-section {
+    width: 100%;
+    max-width: 900px;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    background-color: #2c2c2c; /* Cor de fundo mais escura */
+    border-radius: 8px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagem do perfil do usuário */
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Nome do usuário */
+.user-name {
+    font-size: 28px;
+    color: #dee2e6;
+    margin-top: 10px;
+}
+
+/* Etiqueta "Perfil" */
+.profile-label {
+    width: auto;
+    margin-top: 20px;
+    color: #dee2e6;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Linha divisória */
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: #4b4b4b; /* Cor mais escura para a linha divisória */
+    margin-top: 10px;
+}
+
+/* Ícone de notificação */
+.menu {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    filter: invert(1); /* Inverte as cores do ícone para se destacar no fundo escuro */
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 100%;
+    max-width: 300px;
+    background: #343a40;
+    padding-top: 20px;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    transition: right 0.3s ease;
+    z-index: 2;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Links na barra lateral */
+.sidebar .page-link {
+    display: block;
+    padding: 15px;
+    color: #dee2e6;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo de hover nos links da barra lateral */
+.sidebar .page-link:hover {
+    background-color: #495057;
+}
+
+/* Estilo padrão dos links na barra lateral */
+.sidebar a {
+    display: block;
+    padding: 15px;
+    color: #dee2e6;
+    text-decoration: none;
+}
+
+/* Ajusta o conteúdo principal para dar espaço à barra lateral */
+.profile-section {
+    margin-right: 300px;
+}
+
+/* Botão para fechar a barra lateral */
+.sidebar .close-sidebar {
+    width: 100%;
+    padding: 15px;
+    color: #dee2e6;
+    background-color: #343a40;
+    border: none;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo de hover no botão de fechar a barra lateral */
+.sidebar .close-sidebar:hover {
+    background-color: #495057;
+}
+
+/* Seção de estatísticas */
+.stats-section {
+    width: 100%;
+    max-width: 900px;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    background-color: #2c2c2c; /* Cor de fundo mais escura */
+    border-radius: 8px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo base para as estatísticas */
+.stat {
+    width: auto;
+    color: #dee2e6;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Estilo específico para a estatística de curtidas */
+.likes,
+.saves,
+.comments {
+    cursor: pointer;
+}
+
+/* Ícones de notificação para comentários */
+.notification-image {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+/* Estilo para as divs de publicações curtidas, salvas e comentadas */
+.liked-posts,
+.saved-posts,
+.commented-posts {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Estilo padrão para cada div de publicação (simulado) */
+.liked-post,
+.saved-post,
+.commented-post {
+    width: 120px;
+    height: 120px;
+    background-color: #2c2c2c; /* Cor de fundo mais escura */
+    border-radius: 8px;
+    margin: 10px;
+    text-align: center;
+    line-height: 120px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo quando a classe 'show' é adicionada */
+.show {
+    display: flex;
+}
+
+/* Estilo específico para a estatística de curtidas */
+.likes.selected::after {
+    transform: translateX(0);
+}
+
+/* Estilo específico para a estatística de salvos */
+.saves.selected::after {
+    transform: translateX(100%);
+}
+
+/* Estilo específico para a estatística de comentários */
+.comments.selected::after {
+    transform: translateX(200%);
+}
+
+/* Responsividade */
+/* Responsividade */
+@media only screen and (max-width: 768px) {
+    .profile-section {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .stats-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .liked-posts,
+    .saved-posts,
+    .commented-posts {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        max-width: none;
+    }
+
+    .menu {
+        right: 10px;
+    }
+}
+
+/* Estilizando o corpo da página para tornar o texto mais legível no fundo escuro */
+@media only screen and (max-width: 600px) {
+    body {
+        color: #dee2e6;
+    }
+}
+
+h1 {
+    color: #ecf0f1;
+}
+
+#itemList, #favoriteList {
+    list-style: none;
+    padding: 0;
+}
+
+#itemList li, #favoriteList li {
+    background-color: #34495e; /* Cor de fundo das listas */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Botão Limpar Favoritos */
+#clearFavorites {
+    background-color: #e74c3c; /* Cor de fundo do botão de limpar */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#clearFavorites:hover {
+    background-color: #c0392b; /* Cor de fundo do botão de limpar ao passar o mouse */
+}
+

@@ -1,0 +1,263 @@
+/* Adiciona regras de mídia para dispositivos móveis (celular) */
+@media screen and (max-width: 480px) {
+    .destaque-day {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .base-destaque {
+        width: 100%;
+    }
+
+    .base-news-main {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .base-news-main h1 {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .news-main,
+    .minis-news,
+    .mini-news {
+        width: 100%;
+    }
+
+    .minis-news {
+        justify-content: center;
+        height: auto;
+        gap: 20px;
+    }
+
+    .mini-news {
+        height: 230px;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 18px;
+    }
+
+    .overlay-black {
+        border-radius: 10px;
+    }
+
+    .title-jornalista {
+        margin-top: 30px;
+        font-size: 18px;
+    }
+
+    .base-journalist {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .journalist {
+        width: calc(33.33% - 10px);
+        display: inline-flex;
+        align-items: center;
+        /* Alinha os itens ao centro verticalmente */
+        justify-content: center;
+        /* Alinha os itens ao centro horizontalmente */
+    }
+
+    .journalist img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .journalist p {
+        font-size: 14px;
+    }
+
+    .base-news-gossip,
+    .base-news-news,
+    .base-news-sports {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 20px;
+
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .news-base {
+        width: 100%;
+        height: auto;
+    }
+
+    .news-base .news {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .news .base-text {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news .base-img {
+        height: 95%;
+        width: 95%;
+    }
+
+    .news .title {
+        font-size: 18px;
+
+        width: 95%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .news .subtitle {
+        width: 95%;
+        font-size: 12px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .news .date {
+        font-size: 12px;
+    }
+
+    .btn_vejamais button {
+        width: 200px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .clima,
+    .anuncio {
+        width: 80%;
+        height: 400px;
+    }
+
+    .city {
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .weather {
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 1.2px;
+        color: rgb(0, 108, 202);
+    }
+
+    .temp {
+        font-size: 1.4em;
+        color: black;
+    }
+
+    .maxHeading,
+    .minHeading {
+        font-size: 14px;
+        font-weight: 600;
+        color: black;
+    }
+
+    .maxTemp,
+    .minTemp {
+        font-size: 11px;
+        font-weight: 500;
+        color: gray;
+    }
+}
+
+/* Adiciona regras de mídia para iPad */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .destaque-day {
+        margin-top: 15px;
+    }
+
+    .base-destaque {
+        width: 100%;
+    }
+
+    .base-news-main {
+        gap: 10px;
+    }
+
+    .news-main,
+    .minis-news,
+    .mini-news {
+        width: 100%;
+    }
+
+    .minis-news {
+        justify-content: center;
+        height: auto;
+        gap: 20px;
+    }
+
+    .mini-news {
+        height: 274px;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 18px;
+    }
+
+    .overlay-black {
+        border-radius: 10px;
+    }
+
+    .title-jornalista {
+        margin-top: 15px;
+    }
+
+    .base-journalist .journalist {
+        width: 100%;
+    }
+
+    .base-news-news,
+    .base-news-gossip,
+    .base-news-sports{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .news .base-text,
+    .base-text .title,
+    .base-text .subtitle,
+    .base-text .date {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .news-base{
+        width: 100%;
+    }
+
+    .news-base .news{
+        width: 100%;
+        padding: 10px;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+
+    .news .base-img{
+        height: 180px;
+    }
+
+    .news .base-text{
+        height: 100%;
+    }
+
+    .btn_vejamais button {
+        width: 300px;
+    }
+
+    .clima,
+    .anuncio {
+        width: 40%;
+        height: 500px;
+    }
+}

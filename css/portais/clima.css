@@ -1,0 +1,101 @@
+.cardContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 255, 255, 0.089);
+    cursor: pointer;
+  }
+  
+  .city {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    color: black;
+  }
+  
+  .weather {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    color: rgb(0, 108, 202);
+  }
+
+  .img_clima{
+    height: 150px;
+  }
+  
+  .temp {
+    font-size: 1.8em;
+    color: black;
+  }
+  
+  .minmaxContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .min,
+  .max {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0px 20px;
+    gap: 4px;
+  }
+  
+  .max {
+    align-items: flex-start;
+    border-left: 2px solid rgb(0, 0, 0);
+  }
+  
+  .maxHeading,
+  .minHeading {
+    font-size: 17px;
+    font-weight: 600;
+    color: black;
+  }
+  
+  .maxTemp,
+  .minTemp {
+    font-size: 14px;
+    font-weight: 500;
+    color: gray;
+  }
+  
+  .cardContainer::before {
+    width: 100px;
+    height: 100px;
+    content: "";
+    position: absolute;
+    background-color: rgb(144, 161, 255);
+    z-index: -1;
+    border-radius: 50%;
+    left: 100px;
+    top: 50px;
+    transition: all 1s;
+  }
+  
+  .cardContainer:hover::before {
+    transform: translate(-50px, 50px);
+  }
+  

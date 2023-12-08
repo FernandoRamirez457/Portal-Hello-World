@@ -1,0 +1,167 @@
+/* Inicio do Header */
+header {
+    display: inline;
+}
+
+.logosHello {
+    margin: 10px 0px 5px 50px;
+    display: flex;
+    gap: 15px;
+    width: auto;
+}
+
+.logosHello img {
+    height: 24px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    transition: background-color 0.5s ease;
+}
+
+#navbar div {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+/* MENUS RELACIONADO A PAGINA */
+:root {
+    --color-world: rgba(0, 125, 250, 0.9);
+    --color-news: rgb(194, 0, 0);
+    --color-esportes: rgb(0, 188, 0);
+    --color-entretenimento: #8a2be2;
+    --color-jornalista: #ff6600;
+    --opacity-color-world: rgba(0, 128, 255, 0.8);
+    --opacity-color-news: rgb(194, 0, 0, 0.8);
+    --opacity-color-esportes: rgb(0, 188, 0, 0.8);
+    --opacity-color-entretenimento: hsl(271, 76%, 53%, 0.8);
+    --opacity-color-jornalista: hsl(24, 100%, 50%, 0.8);
+}
+
+body.world #navbar{
+    background-color: var(--color-world);
+}
+
+body.news #navbar{
+    background-color: var(--color-news);
+}
+
+body.esportes #navbar{
+    background-color: var(--color-esportes);
+}
+
+body.entretenimento #navbar{
+    background-color: var(--color-entretenimento);
+}
+
+body.jornalista #navbar{
+    background-color: var(--color-jornalista);
+}
+
+body.world #sidebar{
+    background-color: var(--opacity-color-world);
+}
+
+body.news #sidebar{
+    background-color: var(--opacity-color-news);
+}
+
+body.esportes #sidebar{
+    background-color: var(--opacity-color-esportes);
+}
+
+body.entretenimento #sidebar{
+    background-color: var(--opacity-color-entretenimento);
+}
+
+body.jornalista #sidebar{
+    background-color: var(--opacity-color-jornalista);
+}
+
+
+#sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+#sidebar a {
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+#sidebar a:hover {
+    color: black;
+}
+
+#sidebar .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+}
+
+#searchIcon,
+#closeIcon {
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+#searchField {
+    display: none;
+    margin-right: 10px;
+}
+
+#searchField input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Adiciona regras de mídia para ajustar o layout em telas menores */
+@media screen and (max-width: 768px) {
+    .logosHello {
+        margin: 10px auto 5px;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .logosHello img{
+        height: 20px;
+    }
+
+    #navbar {
+        padding: 10px;
+    }
+
+    #sidebar {
+        padding-top: 20px;
+    }
+
+    #sidebar a {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    #searchField input {
+        padding: 8px;
+        font-size: 14px;
+    }
+}

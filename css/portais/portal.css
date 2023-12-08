@@ -1,0 +1,290 @@
+/* DIV DESTAQUE */
+.destaque-day{
+    height: 40px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.base-destaque{
+    height: 40px;
+    width: 240px;
+    background-color: rgb(21, 114, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.base-destaque p{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+/* DIV DOS DESTAQUES DO DIA */
+
+.base-news-main{
+    height: 590px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-weight: 500;
+    font-size: 23px;
+    color: white;
+}
+
+.base-news-main h1{
+    z-index: 2;
+}
+
+.base-news-main h1 a{
+    color: white;
+}
+
+.base-news-main h1 a:hover{
+    color: rgb(196, 196, 196);
+}
+
+.news-main{
+    height: 570px;
+    width: 800px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    position: relative;
+    background: no-repeat top center/cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.news-main:hover{
+    transform: scale(1.01);
+}
+
+.minis-news{
+    height: 570px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mini-news{
+    position: relative;
+    height: 275px;
+    width: 100%;
+    background: no-repeat top center/cover;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.mini-news:hover{
+    transform: scale(1.01);
+}
+
+.overlay-black{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+/* journalist BASE */
+.title-jornalista{
+    font-size: 26px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: rgb(0, 128, 255);
+}
+
+.base-journalist{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.base-journalist .journalist{
+    width: 170px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.journalist img{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+
+
+/* NEWS GOSSIP */
+
+.base-news-gossip,
+.base-news-news,
+.base-news-sports{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.news-base{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news-base .news{
+    height: 230px;
+    width: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.news .base-img{
+    height: 200px;
+    width: 340px;
+}
+
+.base-img img{
+    width: 100%;
+    height: 100%;
+    background: no-repeat top center/cover;
+    border-radius: 5px;
+}
+
+.news .base-text{
+    height: 200px;
+    width: 720px;
+    position: relative;
+}
+
+.base-text .title{
+    font-size: 24px;
+    margin-bottom: 3px;
+    font-weight: 600;
+}
+
+.base-text .subtitle{
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.base-text .date{
+    font-size: 15px;
+    color: rgb(183, 183, 183);
+}
+
+.base-text .estrela {
+    color: black;
+    font-size: 24px;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+
+.base-text .favorite-icon.favorited {
+    color: #f8d231;
+}
+
+.btn_vejamais{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_vejamais button{
+    height: 35px;
+    width: 250px;
+    background-color: rgb(214, 212, 212);
+    font-size: 15px;
+    border-radius: 50px;
+    border: none;
+}
+
+.btn_vejamais button:hover{
+    background-color: rgb(174, 174, 174);
+}
+
+
+.clima{
+    height: 660px;
+    width: 400px;
+    background-color: rgb(232, 232, 232);
+    border-radius: 10px;
+}
+
+.anuncio{
+    height: 660px;
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+}
+
+.anuncio img{
+    height: 100%;
+    width: 100%;
+} 
+
+/* ALTERAÇÕES DE COR RELACIONADO A CATEGORIA*/
+
+.destaque-news{
+    background-color: rgb(194, 0, 0);
+}
+
+.destaque-gossip{
+    background-color: #8a2be2;
+}
+
+.destaque-sport{
+    background-color: rgb(0, 188, 0);
+}
+
+.news-text {
+    color: rgb(194, 0, 0);
+    outline: none; /* Remova a borda padrão do foco para elementos não interativos */
+}
+
+.news-text:hover {
+    color: rgb(136, 0, 0);
+    outline: none; /* Remova a borda padrão do foco para elementos não interativos */
+}
+
+
+.gossip-text{
+    color: #8a2be2;
+}
+
+.gossip-text:hover{
+    color: #4f0099;
+}
+
+.sport-text{
+    color: rgb(0, 188, 0);
+}
+
+.sport-text:hover{
+    color: rgb(0, 112, 0);
+}
