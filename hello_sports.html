@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello Esportes</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/portais/hellos.css">
+  <link rel="stylesheet" href="./css/responsive/responsive_hello.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body class="esportes">
+    <!--COMEÇO DO NAVBAR-->
+    <header>
+      <div class="logosHello">
+        <a href="./portal.html">
+          <img src="./img/hello_world_color.png" alt="logo Hello World" />
+        </a>
+        <a href="./hello_news.html">
+          <img src="./img/hello_news_color.png" alt="logo hello News" />
+        </a>
+        <a href="./hello_gossip.html">
+          <img src="./img/hello_gossip_color.png" alt="logo hello Entretenimento" />
+        </a>
+        <a href="./jornalist-comunity.html">
+          <img src="./img/hello_journalist_color.png" alt="logo Hello Jornalistas" />
+        </a>
+      </div>
+      
+      <div id="navbar">
+        <div onclick="openNav()">
+          <i class="fas fa-bars" style="color: #ffffff; font-size: 24px;"></i>
+          <p style="margin: 0 10px; font-size: 18px;">Menu</p>
+        </div>
+        <div>
+          <a href="./hello_sports.html"><img src="./img/hello_sports_white.png" alt="Logo Hello Sports" style="height: 40px;" /></a>
+        </div>
+        <div style="display: flex; align-items: center;">
+          <span id="searchIcon" onclick="toggleSearchField()">
+            <i class="fas fa-search" style="color: #ffffff; font-size: 24px;"></i>
+          </span>
+          <div id="searchField" style="display: none;">
+            <input type="text" placeholder="Pesquisar" />
+          </div>
+          <span id="closeIcon" onclick="closeSearchField()" style="display: none;">
+            <i class="fas fa-times" style="color: #ffffff; font-size: 24px;"></i>
+          </span>
+          <span id="userIcon" onclick="openUserPage()">
+            <i class="fas fa-user" style="color: #ffffff; font-size: 24px;"></i>
+          </span>
+        </div>
+      </div>
+  
+      <div id="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./portal.html" style="font-size: 24px;">Hello World</a>
+        <a href="./hello_news" style="font-size: 24px;">Hello News</a>
+        <a href="./hello_gossip" style="font-size: 24px;">Hello Gossip</a>
+        <a href="./hello_sports" style="font-size: 24px;">Hello Sports</a>
+        <a href="./php/Login/abaUsuario.php" style="font-size: 24px;">Perfil</a>
+        <a href="./jornalist-comunity.html" style="font-size: 24px;">Comunidade jornalística</a>
+      </div>
+    </header>
+    <!--FIM DO NAVBAR-->
+  <div class="carousel">
+    <div class="slides">
+      <div class="slide">
+        <img class="imgCarrossel1" src="" alt="Imagem 1">
+        <h2 class="titulo_carrossel1"></h2>
+        <div class="opacity-slide"></div>
+      </div>
+      <div class="slide">
+        <img class="imgCarrossel2" src="" alt="Imagem 2">
+        <h2 class="titulo_carrossel2"></h2>
+        <div class="opacity-slide"></div>
+      </div>
+      <div class="slide">
+        <img class="imgCarrossel3" src="" alt="Imagem 3">
+        <h2 class="titulo_carrossel3"></h2>
+        <div class="opacity-slide"></div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="section__noticias">
+      <div class="noticias__esquerda">
+        <h2 class="titulo_data_atual"></h2>
+        <hr>
+        <!-- <div class="noticia">
+          <div class="div_imagem_noticia">
+            <img src="./img/Rectangle 38.png" alt="imagem da noticia" />
+          </div>
+          <div class="div_descricao_noticia">
+            <h3>
+              Israel anuncia ter encontrado armas e infraestrutura terrorista do
+              Hamas durante operação em maior hospital de Gaza
+            </h3>
+            <p>
+              O Exército de Israel anunciou nesta quarta-feira (15) ter
+              encontrado armas e infraestrutura terrorista do Hamas no hospital
+              Al Shifa, o maior da Faixa de Gaza, durante uma operação militar
+              que começou na noite de terça-feira (14).
+            </p>
+          </div>
+        </div> -->
+      </div>
+      <div class="noticias__direita">
+        <h2 class="titulo_data_anterior"></h2>
+        <hr>
+        <div class="noticias_anteriores"></div>
+        <!-- <div class="noticia_direita">
+          <div class="div_img_noticia_direita">
+            <img src="./img/Rectangle 41.png" alt="imagem da noticia" />
+          </div>
+          <div class="div_descricao_noticia_direira">
+            <h3>
+              Lula diz que ataques a Dino por presença de membros de facção em
+              ministério são ‘fake news’
+            </h3>
+          </div>
+        </div> -->
+
+        <div class="anuncio">
+          <a href="" target="_blank"></a><img src="./img/anuncio_humanity_machine.jpeg" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div id="footer_content">
+      <div id="footer_contacts">
+        <a href="./hello_sports.html"><img class="logo_rodape" src="./img/hello_sports_white.png" alt=""></a>
+
+        <div id="footer_social_media">
+          <a href="https://www.instagram.com/portalhw/" target="_blank" class="footer-link" id="instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="#" class="footer-link" id="x">
+            <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+          </a>
+
+          <a href="mailto:hw.ct.cps@gmail.com" target="_blank" class="footer-link" id="email">
+            <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+          </a>
+        </div>
+      </div>
+
+      <ul class="footer-list">
+        <li>
+          <h3>Assuntos</h3>
+        </li>
+        <li>
+          <a href="./hello_news.html" class="footer-link">Hello News</a>
+        </li>
+        <li>
+          <a href="./hello_gossip.html" class="footer-link">Hello Gossip</a>
+        </li>
+        <li>
+          <a href="./hello_sports.html" class="footer-link">Hello Sports</a>
+        </li>
+      </ul>
+<ul class="footer-list">
+        <li>
+          <h3>Comunidade</h3>
+        </li>
+        <li>
+          <a href="./perfil.html" class="footer-link">Perfil</a>
+        </li>
+        <li>
+          <a href="./jornalist-comunity.html" class="footer-link">Comunidade</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Site de Apresentação</a>
+        </li>
+      </ul>
+
+      <ul class="footer-list">
+        <li>
+          <h3>API's</h3>
+        </li>
+        <li>
+          <a href="https://gnews.io" class="footer-link" target="_blank">GNews</a>
+        </li>
+        <li>
+          <a href="https://openweathermap.org" class="footer-link" target="_blank">OpenWeather</a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="footer_copyright">
+      &#169
+      2023 all rights reserved
+    </div>
+  </footer>
+
+  <script src="./js/portais/carrossel.js"></script>
+  <script src="./js/navbar.js"></script>
+  <script type="module" src="./js/portais/gossip_manipulacao.js"></script>
+  <script src="./js/noticias/favoritar.js"></script>
+</body>
+
+</html>

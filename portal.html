@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello World - Portal</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/portais/portal.css" />
+  <link rel="stylesheet" href="./css/portais/clima.css">
+  <link rel="stylesheet" href="./css/responsive/responsive_portal.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body class="world">
+  <!--COMEÇO DO NAVBAR-->
+  <header>
+    <div class="logosHello">
+      <a href="./hello_news.html">
+        <img src="./img/hello_news_color.png" alt="logo hello Esportes" />
+      </a>
+      <a href="./hello_gossip.html">
+        <img src="./img/hello_gossip_color.png" alt="logo Hello Entretenimento" />
+      </a>
+      <a href="./hello_sports.html">
+        <img src="./img/hello_sports_color.png" alt="logo hello Esportes" />
+      </a>
+      <a href="./jornalist-comunity.html">
+        <img src="./img/hello_journalist_color.png" alt="logo Hello Jornalistas" />
+      </a>
+    </div>
+
+    <div id="navbar">
+      <div onclick="openNav()">
+        <i class="fas fa-bars" style="color: #ffffff; font-size: 24px;"></i>
+        <p style="margin: 0 10px; font-size: 18px;">Menu</p>
+      </div>
+      <div>
+        <a href="./portal.html"><img src="./img/logo_hello_world_portal.png" alt="Logo Hello World"
+            style="height: 40px;" /></a>
+      </div>
+      <div style="display: flex; align-items: center;">
+        <span id="searchIcon" onclick="toggleSearchField()">
+          <i class="fas fa-search" style="color: #ffffff; font-size: 24px;"></i>
+        </span>
+        <div id="searchField" style="display: none;">
+          <input type="text" placeholder="Pesquisar" />
+        </div>
+        <span id="closeIcon" onclick="closeSearchField()" style="display: none;">
+          <i class="fas fa-times" style="color: #ffffff; font-size: 24px;"></i>
+        </span>
+        <span id="userIcon" onclick="openUserPage()">
+          <i class="fas fa-user" style="color: #ffffff; font-size: 24px;"></i>
+        </span>
+      </div>
+    </div>
+
+    <div id="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="./portal.html" style="font-size: 24px;">Hello World</a>
+      <a href="./hello_news" style="font-size: 24px;">Hello News</a>
+      <a href="./hello_gossip" style="font-size: 24px;">Hello Gossip</a>
+      <a href="./hello_sports" style="font-size: 24px;">Hello Sports</a>
+      <a href="./php/Login/abaUsuario.php" style="font-size: 24px;">Perfil</a>
+      <a href="./jornalist-comunity.html" style="font-size: 24px;">Comunidade jornalística</a>
+    </div>
+  </header>
+  <!--FIM DO NAVBAR-->
+
+  <main>
+    <div class="destaque-day">
+      <div class="base-destaque">
+        <p>Últimos Destaques</p>
+      </div>
+    </div>
+
+    <section class="base-news-main">
+      <article class="news-main">
+        <h1></h1>
+        <div class="overlay-black"></div>
+      </article>
+
+      <div class="minis-news">
+        <article class="mini-news">
+          <h1></h1>
+          <div class="overlay-black"></div>
+        </article>
+        <article class="mini-news">
+          <h1></h1>
+          <div class="overlay-black"></div>
+        </article>
+      </div>
+    </section>
+
+
+    <p class="title-jornalista">Confira Nossos Jornalistas:</p>
+    <section class="base-journalist">
+      <div class="journalist">
+        <img src="./img/chico_barney.jfif" alt="" />
+        <p>Chico Barney</p>
+      </div>
+
+      <div class="journalist">
+        <img src="./img/leo_dias_foto.jpg" alt="" />
+        <p>Leo Dias</p>
+      </div>
+
+      <div class="journalist">
+        <img src="./img/ana_paula_andrade_foto.jfif" alt="" />
+        <p>Ana Paula Andrade</p>
+      </div>
+
+      <div class="journalist">
+        <img src="./img/vitor_matos_foto.png" alt="" />
+        <p>Vitor Matos</p>
+      </div>
+
+      <div class="journalist">
+        <img src="./img/luciana_oliveira_foto.jpg" alt="" />
+        <p>Luciana de Oliveira</p>
+      </div>
+
+      <div class="journalist">
+        <img src="./img/braulio_lorentz_foto.jfif" alt="" />
+        <p>Braulio Lorentz</p>
+      </div>
+
+    </section>
+
+    <hr>
+
+    <div class="destaque-day">
+      <div class="base-destaque destaque-news">
+        <p>Notícias</p>
+      </div>
+    </div>
+
+    <section class="base-news-news">
+      <div class="news-base">
+        <div class="news">
+          <div class="base-img">
+            <img />
+          </div>
+          <div class="base-text">
+            <a href="">
+              <h1 class="title news-text"></h1>
+            </a>
+            <p class="subtitle"></p>
+            <p class="date"></p>
+          </div>
+        </div>
+
+        <div class="news">
+          <div class="base-img">
+            <img />
+          </div>
+          <div class="base-text">
+            <a href="">
+              <h1 class="title news-text"></h1>
+            </a>
+            <p class="subtitle"></p>
+            <p class="date"></p>
+          </div>
+        </div>
+
+        <div class="news">
+          <div class="base-img">
+            <img />
+          </div>
+          <div class="base-text">
+            <a href="">
+              <h1 class="title news-text"></h1>
+            </a>
+            <p class="subtitle"></p>
+            <p class="date"></p>
+          </div>
+        </div>
+        <div class="btn_vejamais"><a href="./hello_news.html"><button>Veja Mais</button></a></div>
+      </div>
+
+      <div class="clima">
+        <div class="cardContainer">
+          <div class="card">
+            <p class="city">PINK CITY</p>
+            <p class="weather">PARTILY CLOUDY</p>
+            <img class="img_clima" src="">
+            <p class="temp">32°</p>
+            <div class="minmaxContainer">
+              <div class="min">
+                <p class="minHeading">Min</p>
+                <p class="minTemp">30°</p>
+              </div>
+              <div class="max">
+                <p class="maxHeading">Max</p>
+                <p class="maxTemp">32°</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <div class="destaque-day">
+      <div class="base-destaque destaque-gossip">
+        <p>Entretenimento</p>
+      </div>
+    </div>
+
+    <section class="base-news-gossip">
+      <div class="news-base">
+        <div class="news">
+          <div class="base-img">
+            <img />
+          </div>
+          <div class="base-text">
+            <a href="">
+              <h1 class="title gossip-text"></h1>
+            </a>
+            <p class="subtitle"></p>
+            <p class="date"></p>
+          </div>
+        </div>
+
+        <div class="news">
+          <div class="base-img">
+            <img />
+          </div>
+          <div class="base-text">
+            <a href="">
+              <h1 class="title gossip-text"></h1>
+            </a>
+            <p class="subtitle"></p>
+            <p class="date"></p>
+          </div>
+        </div>
+
+        <div class="news">
+          <div class="base-img">
+            <img />
+          </div>
+          <div class="base-text">
+            <a href="">
+              <h1 class="title gossip-text"></h1>
+            </a>
+            <p class="subtitle"></p>
+            <p class="date"></p>
+          </div>
+        </div>
+        <div class="btn_vejamais"><a href="./hello_gossip.html"><button>Veja Mais</button></a></div>
+      </div>
+
+      <div class="anuncio">
+        <img src="./img/anuncio_humanity_machine.jpeg" alt="">
+      </div>
+    </section>
+
+    <hr>
+
+    <div class="destaque-day">
+      <div class="base-destaque destaque-sport">
+        <p>Esportes</p>
+      </div>
+    </div>
+
+    <section class="base-news-sports">
+      <div class="news-base">
+        <div class="news">
+          <div class="base-img">
+            <img />
+          </div>
+          <div class="base-text">
+            <a href="">
+              <h1 class="title sport-text"></h1>
+            </a>
+            <p class="subtitle"></p>
+            <p class="date"></p>
+          </div>
+        </div>
+
+        <div class="news">
+          <div class="base-img">
+            <img />
+          </div>
+          <div class="base-text">
+            <a href="">
+              <h1 class="title sport-text"></h1>
+            </a>
+            <p class="subtitle"></p>
+            <p class="date"></p>
+          </div>
+        </div>
+
+        <div class="news">
+          <div class="base-img">
+            <img />
+          </div>
+          <div class="base-text">
+            <a href="">
+              <h1 class="title sport-text"></h1>
+            </a>
+            <p class="subtitle"></p>
+            <p class="date"></p>
+          </div>
+        </div>
+
+        <div class="btn_vejamais"><a href="./hello_sports.html"><button>Veja Mais</button></a></div>
+      </div>
+
+      <div class="anuncio"></div>
+    </section>
+
+    <hr>
+  </main>
+
+  <footer>
+    <div id="footer_content">
+      <div id="footer_contacts">
+        <a href="./portal.html">
+          <img class="logo_rodape" src="./img/logo_hello_world_portal.png" alt="">
+        </a>
+
+        <div id="footer_social_media">
+          <a href="https://www.instagram.com/portalhw/" class="footer-link" id="instagram" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="#" class="footer-link" id="x">
+            <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+          </a>
+
+          <a href="mailto:hw.ct.cps@gmail.com" class="footer-link" id="email" target="_blank">
+            <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+          </a>
+        </div>
+      </div>
+
+      <ul class="footer-list">
+        <li>
+          <h3>Assuntos</h3>
+        </li>
+        <li>
+          <a href="./hello_news.html" class="footer-link">Hello News</a>
+        </li>
+        <li>
+          <a href="./hello_gossip.html" class="footer-link">Hello Gossip</a>
+        </li>
+        <li>
+          <a href="./hello_sports.html" class="footer-link">Hello Sports</a>
+        </li>
+      </ul>
+      <ul class="footer-list">
+        <li>
+          <h3>Comunidade</h3>
+        </li>
+        <li>
+          <a href="./perfil.html" class="footer-link">Perfil</a>
+        </li>
+        <li>
+          <a href="./jornalist-comunity.html" class="footer-link">Comunidade</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Site de Apresentação</a>
+        </li>
+      </ul>
+
+      <ul class="footer-list">
+        <li>
+          <h3>API's</h3>
+        </li>
+        <li>
+          <a href="https://gnews.io" class="footer-link" target="_blank">GNews</a>
+        </li>
+        <li>
+          <a href="https://openweathermap.org" class="footer-link" target="_blank">OpenWeather</a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="footer_copyright">
+      &#169
+      2023 all rights reserved
+    </div>
+  </footer>
+
+  <script src="./js/navbar.js"></script>
+  <script src="./js/portais/portal_manipulacao.js"></script>
+  <script src="./js/portais/requisicao_clima.js"></script>
+  <script src="./js/noticias/favoritar.js"></script>
+</body>
+
+</html>
